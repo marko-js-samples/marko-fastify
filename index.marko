@@ -1,0 +1,20 @@
+<lasso-page/>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>marko-fastify</title>
+    <lasso-head/>
+  </head>
+  <body>
+    <app-hello name=data.name/>
+    You have ${data.count} new messages!
+
+    <ul if(data.colors && data.colors.length)>
+      <li style="color: ${color}" for(color in data.colors)>${color}</li>
+    </ul>
+    <div else>No colors!</div>
+    <lasso-body/>
+  </body>
+</html>
