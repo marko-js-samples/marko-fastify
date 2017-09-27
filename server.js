@@ -20,7 +20,7 @@ require('lasso').configure({
 fastify.register(require('point-of-view'), {
   engine: {
     marko: require('marko')
-  },
+  }
 });
 
 fastify.register(require('fastify-static'), {
