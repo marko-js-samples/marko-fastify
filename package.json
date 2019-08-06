@@ -4,6 +4,9 @@
   "description": "Sample Fastify-based server app that integrates the marko module for rendering a view",
   "main": "server.js",
   "scripts": {
+    "prestart": "rm -rf nohup.out static",
+    "start": "/usr/bin/nohup node ./server.js &",
+    "stop": "/usr/bin/pkill --signal SIGTERM marko-fastify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

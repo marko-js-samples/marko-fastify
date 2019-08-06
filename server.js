@@ -1,3 +1,4 @@
+process.title = 'marko-fastify' // To enable 'npm stop' and 'npm restart'. See scripts.stop in package.json
 require('marko/node-require');
 
 const path = require('path');
