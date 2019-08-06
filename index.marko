@@ -10,11 +10,16 @@
   <body>
     <app-hello name=data.name/>
     You have ${data.count} new messages!
-
-    <ul if(data.colors && data.colors.length)>
-      <li style="color: ${color}" for(color in data.colors)>${color}</li>
-    </ul>
-    <div else>No colors!</div>
+    <if(data.colors && data.colors.length)>
+      <ul>
+        <for|color| of=data.colors>
+          <li style={ color: color }>${color}</li>
+        </for>
+      </ul>
+    </if>
+    <else>
+      <div>No colors!</div>
+    </else>
     <lasso-body/>
   </body>
 </html>

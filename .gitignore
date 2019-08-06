@@ -2,3 +2,4 @@ node_modules/
 *.marko.js
 static/
 .cache/
+nohup.out

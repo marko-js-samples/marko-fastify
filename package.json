@@ -4,6 +4,9 @@
   "description": "Sample Fastify-based server app that integrates the marko module for rendering a view",
   "main": "server.js",
   "scripts": {
+    "prestart": "rm -rf nohup.out static",
+    "start": "/usr/bin/nohup node ./server.js &",
+    "stop": "/usr/bin/pkill --signal SIGTERM marko-fastify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,11 +24,12 @@
   },
   "homepage": "https://github.com/marko-js-samples/marko-fastify#readme",
   "dependencies": {
-    "fastify": "^0.29.0",
-    "fastify-static": "^0.1.0",
-    "lasso": "^2.11.16",
-    "lasso-marko": "^2.3.0",
-    "marko": "^4.4.28",
-    "point-of-view": "^0.3.0"
+    "@lasso/marko-taglib": "^1.0.15",
+    "fastify": "^2.7.1",
+    "fastify-static": "^2.5.0",
+    "lasso": "^3.3.1",
+    "lasso-marko": "^2.4.7",
+    "marko": "^4.18.10",
+    "point-of-view": "^3.5.0"
   }
 }
