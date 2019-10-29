@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/marko-js-samples/marko-fastify#readme",
   "dependencies": {
-    "fastify": "^0.29.0",
+    "fastify": "^2.10.0",
     "fastify-static": "^0.1.0",
     "lasso": "^2.11.16",
     "lasso-marko": "^2.3.0",
